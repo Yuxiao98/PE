@@ -6,11 +6,12 @@ names = sorted(str[0].split(','))
 
 clean = []
 for name in names:
+    # Might not be the best way, just want to try the regex
     match = re.search(r'^(")(.*)(")$', name)
     if match:
         clean.append(match.group(2))
     else:
-        raise("error!")
+        raise("Oooops!")
 
 scoreEvaluate = ['start','A', 'B', 'C', 'D', 'E', 'F', 'G','H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 totalScore = 0
