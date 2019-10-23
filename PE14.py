@@ -11,7 +11,7 @@ def eachChainLen(n):
 
     if n == 1:
         return chainLen+1
-print(eachChainLen(13))
+    
 currLen = 0
 maxLen = 10
 theNumberWeNeed = 13
